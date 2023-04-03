@@ -7,7 +7,7 @@
 .container{
     min-height: 100vh;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +18,8 @@
     min-height: 100%;
     height: 100%;
     width: 50vw;
-    /* background-color: red; */
-     border: 1px solid black;
-    /*border-bottom: none; */
-    overflow: scroll;   
+    border: 1px solid black;
+    /* overflow: scroll;    */
 }
 
 h1{
@@ -36,12 +34,17 @@ h1{
     height: 2.5em;
     width: 25em;
     padding: 1em;
+    background-color: rgb(255, 248, 239);
+    border: 0px;
+    border-radius: 25px;
+    box-shadow: 4px 5px 10px -2px rgba(83,83,83,0.75);
 }
 
 .search_btn{
     width: 4em;
     margin-left: 1em;
     cursor: pointer;
+    
 }
 
 .main2 , .To-do{
@@ -94,6 +97,10 @@ input:active{
 
 .To-do{
     margin-top: 3em;
+    height: 60%;
+    border: 1px solid;
+    overflow-y: scroll;
+    padding: 2em;
 }
 
 .To-do .list{
@@ -104,7 +111,7 @@ input:active{
     display: flex;
     flex-direction: column;
     gap: 1.45em;
-    position: absolute;
+    
 } 
 
 .list .item-btn{
@@ -127,7 +134,7 @@ input:active{
 }
 
 .msg2{
-    position: absolute;
+    position: absoute;
     top: 2.3em;
     right: -12.8em;
     font-size: small;
